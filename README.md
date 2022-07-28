@@ -5,6 +5,10 @@ You need to have the following installed:
 - [node](https://nodejs.org/en/download/)
 - [mob.sh](https://mob.sh/)
 
+## Before you start
+- clone this repository (obviously)
+- `npm i` to install the necessary dependencies
+
 ## Ensemble routine
 ### take over the role of driver
 `mob start 5` takes over the current session and starts the timer of 5 minutes. If there is no current session, it will create a new session with a temporary git branch.
