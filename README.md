@@ -1,7 +1,7 @@
 # Ensemble programming instructions
 
 ## take over the role of driver
-`mob start` takes over the current session. If there is no current session, it will create a temporary git branch for a new session.
+`mob start 5` takes over the current session and starts the timer of 5 minutes. If there is no current session, it will create a new session with a temporary git branch.
 
 if necessary, install new dependencies with `npm i`
 
