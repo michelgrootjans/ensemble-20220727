@@ -1,24 +1,17 @@
+function numberToNumerals(numberInput) {
+    const roman = {1: 'I', 4: 'IV', 5: 'V', 9: 'IX', 10: 'X'}
 
-function numberToNumerals (numberInput){
-    let convertedNumber = '';
+    if (Object.hasOwn(roman, numberInput)) {
+        return roman[numberInput];
+    }
 
-    const roman = {1:'I',2:'II',3:'III',4:'IV',5:'V'}
+    if(numberInput > 10) return numberToNumerals(10) + numberToNumerals(numberInput - 10)
 
-    convertedNumber = roman[numberInput];
-
-    // for (let i = 1; i <= numberInput; i++){
-    //     convertedNumber = convertedNumber + 'I';
-    // }
-    //
-    // if (numberInput == 4) {
-    //     convertedNumber = 'IV';
-    // }
-    console.log(convertedNumber)
-    return convertedNumber;
+    return numberToNumerals(numberInput - 1) + numberToNumerals(1);
 
 }
 
-numberToNumerals(1)
-numberToNumerals(2)
+numberToNumerals(13)
+
 
 module.exports = numberToNumerals;
