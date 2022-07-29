@@ -1,8 +1,7 @@
 function numberToNumerals(numberInput) {
     let convertedNumber = '';
 
-    const roman = {1: 'I', 4: 'IV', 5: 'V', 9: 'IX', 10: 'X', 11: 'XI'}
-    // const romanNumerals: {1: 'I', 2: 'V', 3: 'X'};
+    const roman = {1: 'I', 4: 'IV', 5: 'V', 9: 'IX', 10: 'X', 11: 'XI', 12: 'XII', 13: 'XIII'}
 
     if (numberInput > 1 && numberInput < 4) {
         return 'I'.repeat(numberInput);
@@ -12,14 +11,10 @@ function numberToNumerals(numberInput) {
         return 'V' + 'I'.repeat(numberInput - 5)
     }
 
+    for(let i in roman) {
+        console.log(i)
+    }
     convertedNumber = roman[numberInput];
-    // for (let i = 1; i <= numberInput; i++){
-    //     convertedNumber = convertedNumber + 'I';
-    // }
-    //
-    // if (numberInput == 4) {
-    //     convertedNumber = 'IV';
-    // }
     return convertedNumber;
 
 }
