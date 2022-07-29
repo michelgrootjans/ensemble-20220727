@@ -6,8 +6,11 @@ function numberToNumerals (numberInput){
     // const romanNumerals: {1: 'I', 2: 'V', 3: 'X'};
 
     convertedNumber = roman[numberInput];
+    const length = numberInput.length;
 
-    for(let i = 0; i < )
+    for(let i = 0; i <= numberInput; i++) {
+
+    }
     // for (let i = 1; i <= numberInput; i++){
     //     convertedNumber = convertedNumber + 'I';
     // }
