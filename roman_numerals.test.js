@@ -16,4 +16,8 @@ describe('roman numerals', () => {
   test('5 -> V', () => {
     expect(numberToNumerals(5)).toEqual('V')
   })
+
+  test('11 should not return a value', () => {
+    expect(numberToNumerals(11)).toEqual('XI')
+  });
 });
