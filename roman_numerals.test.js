@@ -19,7 +19,25 @@ describe('roman numerals', () => {
   test('6 -> V1', () => {
     expect(numberToNumerals(6)).toEqual('VI')
   })
-  test('11 should not return a value', () => {
+  test('7 -> VII', () => {
+    expect(numberToNumerals(7)).toEqual('VII')
+  })
+  test('8 -> VIII', () => {
+    expect(numberToNumerals(8)).toEqual('VIII')
+  })
+  test('9 -> IX', () => {
+    expect(numberToNumerals(9)).toEqual('IX')
+  })
+  test('10 -> X', () => {
+    expect(numberToNumerals(10)).toEqual('X')
+  })
+  test('11 -> XI', () => {
     expect(numberToNumerals(11)).toEqual('XI')
+  });
+  test('12 -> XII', () => {
+    expect(numberToNumerals(12)).toEqual('XII')
+  });
+  test('13 -> XIII', () => {
+    expect(numberToNumerals(13)).toEqual('XIII')
   });
 });
